@@ -25,64 +25,70 @@
   </header>
   
   <main id="main-content" class="main-grid">
-    <section>
+    <section id="welcome-section">
       <h2>Welcome to the UM Undergrad Success Navigator</h2>
       <p>Your Comprehensive Guide to Resources for Graduate School Success</p>
       <p>This guide is set up to help you be successful inside and outside of the classroom. We have included the following resources throughout our site:</p>
-      <ol>
+      <ul>
         <li>Academic Resources</li>
         <li>Physical Health</li>
         <li>Mental Health</li>
         <li>Life Outside Classroom</li>
         <li>Contact</li>
-      </ol>
+      </ul>
     </section>
+    <div>
+      <h2>Physical Health</h2>
+      <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
+      <section class="section-grid">
+        <div>
+          <article>
+            <h3>University Health Service (UHS)</h3>
+            <figure>
+              <img src="images/UHS.jpg" alt="University Health Services building">
+              <figcaption>University Health Services Building</figcaption>
+            </figure>
+            <p>Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
+          </article>
+        </div>
+        <div>
+          <article>
+            <h3>Recreational Sports</h3>
+            <figure>
+              <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student with a UMSI backpack in fall on the drag">
+              <figcaption>UMSI in the Fall</figcaption>
+            </figure>
+            <p>Participate in various fitness programs, sports clubs, and gym facilities to stay active and healthy.</p>
+          </article>
+        </div>
+
+      </section>
+    </div>
     
-    <section class="section-grid">
-      <div>
-        <h2>Physical Health</h2>
-        <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
-        <article>
-          <h3>University Health Service (UHS)</h3>
-          <figure>
-            <img src="images/UHS.jpg" alt="University Health Services building">
-            <figcaption>University Health Services Building</figcaption>
-          </figure>
-          <p>Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
-        </article>
-      </div>
-      <div>
-        <article>
-          <h3>Recreational Sports</h3>
-          <figure>
-            <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student with a UMSI backpack in fall on the drag">
-            <figcaption>UMSI in the Fall</figcaption>
-          </figure>
-          <p>Participate in various fitness programs, sports clubs, and gym facilities to stay active and healthy.</p>
-        </article>
-      </div>
-    </section>
-    
-    <section>
+    <section id="mental-health">
       <h2>Mental Health</h2>
       <p>Maintaining your mental well-being is crucial. Here are some resources to support your mental health:</p>
-      <article>
-        <h3>Counseling and Psychological Services (CAPS)</h3>
-        <p>Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
-      </article>
-      <article>
-        <h3>Wellness Coaching</h3>
-        <p>Work with a wellness coach to develop strategies for managing stress and overall well-being.</p>
-      </article>
-      <article>
-        <h3>Mindfulness Resources</h3>
-        <p>Participate in mindfulness and meditation sessions to cultivate a calm mind.</p>
-      </article>
-      <article>
-        <h3>Support Groups</h3>
-        <p>Join peer support groups for shared experiences and collective coping strategies.</p>
-      </article>
+      <!-- New grid container for mental health articles -->
+      <div class="mental-grid">
+        <article>
+          <h3>Counseling and Psychological Services (CAPS)</h3>
+          <p>Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
+        </article>
+        <article>
+          <h3>Wellness Coaching</h3>
+          <p>Work with a wellness coach to develop strategies for managing stress and overall well-being.</p>
+        </article>
+        <article>
+          <h3>Mindfulness Resources</h3>
+          <p>Participate in mindfulness and meditation sessions to cultivate a calm mind.</p>
+        </article>
+        <article>
+          <h3>Support Groups</h3>
+          <p>Join peer support groups for shared experiences and collective coping strategies.</p>
+        </article>
+      </div>
     </section>
+    
     
     <section id="life-outside-classroom">
       <h2>Life Outside the Classroom</h2>
@@ -95,10 +101,23 @@
         <li><strong>Housing and Dining:</strong> Find information on on-campus housing and dining services.</li>
       </ul>
     </section>
+
+    <section id="desktop-extra" class="desktop-only">
+      <h2>Additional Resources for Desktop Users</h2>
+      <p>This section is available only on tablet and desktop devices. Here you’ll find more in-depth guides, extended resource lists, and interactive elements optimized for larger screens.</p>
+      <ul>
+        <li><a href="https://campusinfo.umich.edu/article/academic-resources" target="_blank">Extended Academic Resources</a></li>
+        <li><a href="https://campusinfo.umich.edu/campusmap" target="_blank">Detailed Campus Maps</a></li>
+        <li><a href="https://goblueguarantee.umich.edu/success-stories/" target="_blank">In-Depth Success Stories</a></li>
+      </ul>
+    </section>
+    
+    
   </main>
   
   <footer>
-    <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+    <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a> | &copy; <span id="current-year"></span></p>
   </footer>
+  <script src="js/footer.js"></script>
 </body>
 </html>
